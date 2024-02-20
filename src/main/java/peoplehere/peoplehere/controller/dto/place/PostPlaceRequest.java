@@ -13,7 +13,7 @@ import peoplehere.peoplehere.controller.dto.image.PostImageRequest;
 @AllArgsConstructor
 public class PostPlaceRequest {
     private String placeName;
-    private List<PostImageRequest> placeImage;
+//    private List<PostImageRequest> placeImage;
     private String placeAddress;
     private LatLngDto latLng;
     private int placeOrder;
