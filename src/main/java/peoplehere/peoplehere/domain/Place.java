@@ -1,6 +1,7 @@
 package peoplehere.peoplehere.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
@@ -38,6 +39,7 @@ public class Place extends BaseTimeEntity {
     @ElementCollection
     @CollectionTable(name = "place_images", joinColumns = @JoinColumn(name = "place_id"))
     @Column(name = "image_url")
+    @Nullable
     private List<String> imageUrls = new ArrayList<>();
 
     private String address;
