@@ -23,6 +23,7 @@ public class GetTourResponse {
     private Long userId;
     private String userName;
     private String userImageUrl;
+    private String userContents;
     private int tourTime;
     private String tourContent;
 

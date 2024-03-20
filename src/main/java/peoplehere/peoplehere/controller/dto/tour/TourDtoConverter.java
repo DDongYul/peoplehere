@@ -51,6 +51,7 @@ public class TourDtoConverter {
         getTourResponse.setUserId(tour.getUser().getId());
         getTourResponse.setUserName(tour.getUser().getFirstName());
         getTourResponse.setUserImageUrl(tour.getUser().getImageUrl());
+        getTourResponse.setUserContents(tour.getUser().getContent());
         getTourResponse.setTourTime(tour.getTime());
         getTourResponse.setTourContent(tour.getContent());
 
