@@ -43,13 +43,49 @@
 ![Figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Slack](https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 ![Microsoft Teams](https://img.shields.io/badge/microsoftteams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=white)
-<br>
+
+<hr>
 
 # 서버 아키텍처  
 
 ### ERD  
 <div><img width="731" alt="erd" src="https://github.com/Petudio/backend/assets/75566606/82a108f4-dca8-44fc-a705-f858d52dd41b"></div>
-*노란색 표시 부분은 정적 데이터
+*노란색 표시 부분은 정적 데이터  
+
+<hr>
+
+# 주요 서비스 화면
+
+### 회원가입, 로그인
+<div>
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/31cc10d2-e21e-46e5-9fae-a8413b01834f">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/08d942c7-81c8-4cc7-b329-38deecfbacb6">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/f06f9a06-a5e6-4a7d-891e-62c014beabb7">
+</div>
+<div><img width="527" alt="security config" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/5baffe9a-e239-45f0-8655-2a4c7dca6530"></div>
+- Spring Security와 JWT를 사용하여 인증 및 인가 과정을 구현</br>
+- 로그아웃시 만료시킬 토큰의 정보를 DB의 blacklist에 담아 해당 토큰을 사용하지 못하도록 구현</br>
+- 순환 참조 문제를 해결하기 위해 Spring Security의 UserDetailsService를 구현한 서비스 생성
+
+<hr>
+
+### 코스 생성
+<div>
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3d37a10-2adf-45fa-82b1-6b8f4e0e65de">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3866de9-f0ae-478b-90e3-d00eb7c5a462">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a9b27020-04af-4bea-ac61-0db244a28169">
+</div>
+<div>
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/4016a5f6-3db8-4b36-9f52-31212286e346">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/145a2499-0079-4dce-b055-c7a2ad59dffa">
+<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a3aa503f-5a9b-49fe-8cf4-7df4bfb22f61">
+</div>
+- 하나의 코스에는 여러 장소 객체가 저장, 각 장소마다 여러 장의 이미지를 저장할 수 있음</br>
+- 구글맵에서 장소의 정보를 가져온 뒤, 각 장소마다 새로운 장소 객체를 생성하여, 코스에 필요한 정보들을 저장하는 방식으로 구현</br>
+- 코스 생성시 한 장소마다 여러 장의 이미지를 전송하여 저장해야 하는 문제 발생. 이를 위해 이미지를 인코딩하여 전송하는 방식을 선택</br>
+- 인코딩 된 이미지를 디코딩한 뒤 S3에 저장 후 DB에는 해당 이미지들의 URL만 저장하는 방식으로 구현
+
+<hr>
 
 
 
