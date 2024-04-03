@@ -71,14 +71,14 @@
 
 ### 코스 생성
 <div>
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3d37a10-2adf-45fa-82b1-6b8f4e0e65de">
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3866de9-f0ae-478b-90e3-d00eb7c5a462">
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a9b27020-04af-4bea-ac61-0db244a28169">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3d37a10-2adf-45fa-82b1-6b8f4e0e65de">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/b3866de9-f0ae-478b-90e3-d00eb7c5a462">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a9b27020-04af-4bea-ac61-0db244a28169">
 </div>
 <div>
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/4016a5f6-3db8-4b36-9f52-31212286e346">
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/145a2499-0079-4dce-b055-c7a2ad59dffa">
-<img width="300" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a3aa503f-5a9b-49fe-8cf4-7df4bfb22f61">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/4016a5f6-3db8-4b36-9f52-31212286e346">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/145a2499-0079-4dce-b055-c7a2ad59dffa">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a3aa503f-5a9b-49fe-8cf4-7df4bfb22f61">
 </div>
 - 하나의 코스에는 여러 장소 객체가 저장, 각 장소마다 여러 장의 이미지를 저장할 수 있음</br>
 - 구글맵에서 장소의 정보를 가져온 뒤, 각 장소마다 새로운 장소 객체를 생성하여, 코스에 필요한 정보들을 저장하는 방식으로 구현</br>
@@ -87,6 +87,14 @@
 
 <hr>
 
+### 기타 사용자 화면
+<div>
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/d904a180-f614-4e8c-9dbb-2b4fb49a076c">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/a308641d-459d-4fef-8721-3d5ed031d78b">
+<img width="280" height="650" alt="erd" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/547a00f5-9a95-4274-98ec-52eeaaae4e5b">
+</div>
+- 각각 사용자 화면에서 코스 조회, 코스 상세 정보, 다가오는 만남 화면
+<hr>
 
 
 ## 프로젝트 팀 멤버
