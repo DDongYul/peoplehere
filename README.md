@@ -65,7 +65,8 @@
 <div><img width="527" alt="security config" src="https://github.com/PH-PeopleHere/BackEnd/assets/75566606/5baffe9a-e239-45f0-8655-2a4c7dca6530"></div>
 - Spring Security와 JWT를 사용하여 인증 및 인가 과정을 구현</br>
 - 로그아웃시 만료시킬 토큰의 정보를 DB의 blacklist에 담아 해당 토큰을 사용하지 못하도록 구현</br>
-- 순환 참조 문제를 해결하기 위해 Spring Security의 UserDetailsService를 구현한 서비스 생성
+- 순환 참조 문제를 해결하기 위해 Spring Security의 UserDetailsService를 구현한 서비스 생성</br>
+- 관련 PR : https://github.com/PH-PeopleHere/BackEnd/pull/16
 
 <hr>
 
@@ -83,7 +84,8 @@
 - 하나의 코스에는 여러 장소 객체가 저장, 각 장소마다 여러 장의 이미지를 저장할 수 있음</br>
 - 구글맵에서 장소의 정보를 가져온 뒤, 각 장소마다 새로운 장소 객체를 생성하여, 코스에 필요한 정보들을 저장하는 방식으로 구현</br>
 - 코스 생성시 한 장소마다 여러 장의 이미지를 전송하여 저장해야 하는 문제 발생. 이를 위해 이미지를 인코딩하여 전송하는 방식을 선택</br>
-- 인코딩 된 이미지를 디코딩한 뒤 S3에 저장 후 DB에는 해당 이미지들의 URL만 저장하는 방식으로 구현
+- 인코딩 된 이미지를 디코딩한 뒤 S3에 저장 후 DB에는 해당 이미지들의 URL만 저장하는 방식으로 구현</br>
+- 관련 PR: https://github.com/PH-PeopleHere/BackEnd/pull/31
 
 <hr>
 
